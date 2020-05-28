@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_download"
+        android:icon="@drawable/ic_print"
+        android:title="@string/menu.download"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_download_dua"
+        android:icon="@drawable/ic_print"
+        android:title="@string/menu.download_dua"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_qr_code"
+        android:icon="@drawable/ic_print"
+        android:title="@string/menu.qr_code"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+</menu>

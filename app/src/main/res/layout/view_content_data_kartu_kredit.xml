@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_8dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:textAllCaps="true"
+                android:id="@+id/edt_nama_bank"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.bank_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_no_kartu_kredit"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.no_kartu_kredit"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="24"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:textAllCaps="true"
+                android:id="@+id/edt_jenis_kartu_kredit"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.jenis_kartu_kredit"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:hint="@string/hint.limit_kartu_kredit">
+
+            <com.kreditplus.eform.view.IndonesianCurrencyEditText
+                android:id="@+id/edt_limit_kartu_kredit"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="@integer/max_length_for_rupiah"
+                android:maxLines="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_year_expired_kartu_kredit"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.kadaluarsa_kartu_tahun"
+                android:imeOptions="actionNext"
+                android:inputType="datetime"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_month_expired_kartu_kredit"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.kadaluarsa_kartu_bulan"
+                android:imeOptions="actionNext"
+                android:inputType="datetime"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFD203</color>
+    <color name="colorPrimaryDark">#e6bd00</color>
+    <color name="colorPrimaryLight">#ffe881</color>
+    <color name="colorAccent">#0093DD</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="bg_gray">#EFF0F0</color>
+    <color name="blue_light">#0093DD</color>
+    <color name="blue_dark">#008CD2</color>
+    <color name="red">#e74c3c</color>
+    <color name="green">#2ecc71</color>
+    <color name="camera_background">#C4333333</color>
+</resources>

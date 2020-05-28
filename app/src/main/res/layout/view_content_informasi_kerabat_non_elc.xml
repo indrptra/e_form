@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_8dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+
+                android:id="@+id/edt_nama_kerabat"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.nama_lengkap"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:textAllCaps="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_nama_kerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Full Name Emergency Contact"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ln_hubungan_kerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHubunganKerabatSpn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hubungan Kerabat"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_hubungan_kerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hubungan_kerabat" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_hubungan_kerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Relationship of Emergency Contact"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+
+                android:id="@+id/edt_alamat_kerabat"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.alamat"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="@integer/max_length_alamat"
+                android:textAllCaps="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_alamat_kerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Address of Emergency Contact"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_rt_kerabat"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.rt"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_rt_kerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field RT of Emergency Contact"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_rw_kerabat"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.rw"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_rw_kerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field RW of Emergency Contact"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp">
+
+                <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+                    android:id="@+id/act_auto_alamat_kerabat"
+                    style="@style/AutoCompleteTextViewForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:hint="@string/hint.autoAlamat"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_auto_alamat_kerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field City of Emergency Contact"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ln_emergency_contact_phone_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:layout_weight="4">
+
+                <EditText
+                    android:id="@+id/edt_area_phone_rumah_kerabat"
+                    style="@style/EditTextForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint.area_phone"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:layout_weight="6">
+
+                <EditText
+                    android:id="@+id/edt_phone_rumah_kerabat"
+                    style="@style/EditTextForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint.phone_rumah"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_emergency_contact_phone_office"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:layout_weight="4">
+
+                <EditText
+                    android:id="@+id/edt_area_phone_kantor_kerabat"
+                    style="@style/EditTextForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint.area_phone"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:layout_weight="6">
+
+                <EditText
+                    android:id="@+id/edt_phone_kantor_kerabat"
+                    style="@style/EditTextForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint.phone_kantor"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_hp_kerabat"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.no_hp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="20"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_hp_kerabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Phone Number of Emergency Contact"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

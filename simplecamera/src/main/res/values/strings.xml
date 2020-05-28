@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name" translatable="false">Simple Camera</string>
+
+    <string name="simplecamera_no_camera_error">No camera found!</string>
+
+</resources>

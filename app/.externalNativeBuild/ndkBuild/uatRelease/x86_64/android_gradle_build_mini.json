@@ -1,0 +1,17 @@
+{
+  "buildFiles": [
+    "/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Android.mk",
+    "/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/home/apc-lap008/Android/Sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/uat/release/obj NDK_LIBS_OUT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/uat/release/lib clean"
+  ],
+  "libraries": {
+    "Constant-uatRelease-x86_64": {
+      "artifactName": "Constant",
+      "buildCommand": "/home/apc-lap008/Android/Sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/uat/release/obj NDK_LIBS_OUT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/uat/release/lib /home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/uat/release/obj/local/x86_64/libConstant.so",
+      "abi": "x86_64",
+      "output": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/uat/release/obj/local/x86_64/libConstant.so"
+    }
+  }
+}

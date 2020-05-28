@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/ln_container_data_pribadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_8dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_no_ktp_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint_no_ktp"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="16"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_no_npwp_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/edt_no_npwp_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.npwp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:visibility="gone"
+                app:mask="##.###.###.#-###.###" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_status_pernikahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Pernikahan"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_status_pernikahan_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/status_pernikahan" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_status_pernikahan_pribadi_hide"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint_status_pernikahan"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_status_pernikahan_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Marital Status"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_tanggal_lahir_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint_tanggal_lahir"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:longClickable="false"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_handphone_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.no_hp"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:longClickable="false"
+                android:maxLength="12"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_status_kreditmu"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/hint.status_kreditmu"
+                android:longClickable="false" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_handphone_pribadi_hide"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.no_hp"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_nama_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint.nama_lengkap"
+                android:imeOptions="actionNext"
+                android:inputType="textCapCharacters"
+                android:maxLength="50"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_nama_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Full Name"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_nama_ktp_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint.nama_identitas"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_nama_ktp_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Name on Identity"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_terbit_ktp_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.tanggal_terbit_ktp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:longClickable="false"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_terbit_ktp_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field KTP Published"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ln_jenis_kelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_gender_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:entries="@array/gender" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_gender_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Gender"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_tempat_lahir_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.tempat_lahir"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="20"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_tempat_lahir_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Place of Birth"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_nama_ibu_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.nama_ibu"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_nama_ibu_pribadi_hide"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.nama_ibu"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_nama_ibu_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Biogical Mother"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ln_pendidikan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pendidikan"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_pendidikan_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/pendidikan" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_pendidikan_pribadi_hide"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:hint="@string/text.pendidikan"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_pendidikan_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Education"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ln_warga_negara_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warga Negara"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_warga_negara_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/warga_negara" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_status_rumah_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Rumah"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_status_rumah_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/status_rumah" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_status_rumah_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Home Status"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_tinggal_sejak_tahun_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.tinggal_sejak_tahun"
+                android:imeOptions="actionNext"
+                android:inputType="datetime"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_tinggal_sejak_tahun_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Lived Since (Years)"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_tinggal_sejak_bulan_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.tinggal_sejak_bulan"
+                android:imeOptions="actionNext"
+                android:inputType="datetime"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_tinggal_sejak_bulan_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Lived Since (Month)"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ln_agama_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agama"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_agama_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/agama" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_agama_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Religion"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_jml_tanggungan_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.jml_tanggungan"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="2"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_jml_tanggungan_pribadi_hide"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.jml_tanggungan"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_email_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tl_pengajuan_data_pribadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:shrinkColumns="2"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_8dp">
+
+            <TextView android:text="@string/text.nama_lengkap" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_nama_lengkap"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="Chandra Setiawan" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.nama_pada_identitas" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_nama_pada_identitas"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="Chandra Gunawan" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.no_ktp" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_no_ktp"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="3901832189373590" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.tanggal_terbit_ktp" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_tanggal_terbit_ktp"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="20-08-2010" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.gender" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_gender"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="Pria" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.tempat_lahir" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_tempat_lahir"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="Bandung" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.tanggal_lahir" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_tanggal_lahir"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="20-08-1993" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.nama_gadis_ibu_kandung" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_nama_gadis_ibu_kandung"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="Clara" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.pendidikan" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_pendidikan"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="S1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text_warga_negara" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_warga_negara"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="WNI" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.status_rumah" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_status_rumah"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="Keluarga" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.tinggal_sejak_tahun" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_tinggal_sejak_tahun"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="2000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.tinggal_sejak_bulan" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_tinggal_sejak_bulan"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="12" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.agama" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_agama"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="Kristen" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text_status_pernikahan" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_status_pernikahan"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="Menikah" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.jumlah_tanggungan" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_jumlah_tanggungan"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.nomor_handphone" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_no_handphone"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="081321172634" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.email" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="chandra@test.com" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

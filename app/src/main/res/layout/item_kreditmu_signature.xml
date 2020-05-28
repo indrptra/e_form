@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_date_pemohon_persetujuan_kreditmu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12/20/15" />
+
+        <ImageView
+            android:id="@+id/img_ttd_pemohon_persetujuan_kerditmu"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:background="@color/colorDivider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/form.content.tanda_tangan" />
+
+        <TextView
+            android:id="@+id/tv_error_signature_kreditmu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text.error_signature"
+            android:textColor="@color/red"
+            android:textStyle="italic"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

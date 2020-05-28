@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <RadioGroup
+        android:id="@+id/rg_persetujuan_penawaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_persetujuanPenawaranTrue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="Saya setuju menerima informasi terkait produk lainnya yang ditawarkan oleh PT. Finansia Multi Finance (Kredit Plus)" />
+
+        <RadioButton
+            android:id="@+id/rb_persetujuanPenawaranFalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="Saya tidak setuju menerima informasi terkait produk lainnya yang ditawarkan oleh PT. Finansia Multi Finance (Kredit Plus)" />
+    </RadioGroup>
+</RelativeLayout>

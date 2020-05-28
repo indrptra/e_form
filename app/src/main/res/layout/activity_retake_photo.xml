@@ -1,0 +1,2613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_submit">
+
+            <LinearLayout
+                android:id="@+id/ln_data_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dimen_8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:drawableLeft="@drawable/ic_data_pribadi"
+                            android:drawablePadding="@dimen/drawable_padding_detail"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/padding_detail_header"
+                            android:text="@string/header.data_pribadi"
+                            android:textColor="@color/blue_dark"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TableLayout
+                                android:id="@+id/tl_pengajuan_data_pribadi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:shrinkColumns="2">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_8dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.nama_lengkap" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_nama_lengkap"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.nomor_handphone" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_no_handphone"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.alamat" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_alamat_tinggal"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAgunan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dimen_8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:drawableLeft="@drawable/ic_keterangan"
+                            android:drawablePadding="@dimen/drawable_padding_detail"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/padding_detail_header"
+                            android:text="@string/header.agunan"
+                            android:textColor="@color/blue_dark"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/dimen_8dp">
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:shrinkColumns="2">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_8dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint_regional" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=": " />
+
+                                    <TextView
+                                        android:id="@+id/tvWilayahKendaraan"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint_cabang" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/tvCabangKendaraan"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.jenis_kendaraan" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvJenisKendaraan" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint.merk_kendaraan" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvMerkKendaraan" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/tct_tipe_kendaraan" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvTipeKendaraan" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint.tahun" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvTahunKendaraan" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint.warna" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvWarnaKendaraan" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint.isi_silinder" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvIsiSilinder" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="hint.no_polisi" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvNoPolisi" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint.no_rangka" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvNoRangka" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint.no_mesin" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvNoMesin" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint.bpkb_nama" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvBpkbAtasNama" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="Nama Bpkb" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvNamaBpkb" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint_masa_berlaku_stnk" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvMasaBerlakuStnk" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint_masa_berlaku_pajak_stnk" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/tvMasaBerlakuPajakStnk" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dimen_8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:drawableLeft="@drawable/ic_perhitungan"
+                            android:drawablePadding="@dimen/drawable_padding_detail"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/padding_detail_header"
+                            android:text="@string/header.data_perhitungan"
+                            android:textColor="@color/blue_dark"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/dimen_8dp">
+
+                            <TableLayout
+                                android:id="@+id/tl_pengajuan_data_perhitungan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:shrinkColumns="2">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.purchase_price" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=": " />
+
+                                    <TextView
+                                        android:id="@+id/txt_purchase_price"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.discount" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_discount"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.dp" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_dp"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.ntf" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_ntf"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/hint.tipe_pembayaran" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_angsuran_pertama"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.biaya_administrasi" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_biaya_administrasi"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.flate_rate" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_flate_rate"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.angsuran" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView android:id="@+id/txt_angsuran" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_4dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.refund_subsidi" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_in_refund"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvDetailAsset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dimen_8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:drawableLeft="@drawable/ic_asset"
+                            android:drawablePadding="@dimen/drawable_padding_detail"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/padding_detail_header"
+                            android:text="@string/header.detail_asset"
+                            android:textColor="@color/blue_dark"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/dimen_8dp">
+
+                            <!--ASSETS DETAIL GOES HERE-->
+                            <LinearLayout
+                                android:id="@+id/ln_asset_detail_product_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <!--<include layout="@layout/view_item_form_detail_asset" />-->
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dimen_8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:drawableLeft="@drawable/ic_keterangan"
+                            android:drawablePadding="@dimen/drawable_padding_detail"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/padding_detail_header"
+                            android:text="@string/header.keterangan_retake"
+                            android:textColor="@color/blue_dark"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/dimen_8dp">
+
+                            <TableLayout
+                                android:id="@+id/tl_keterangan_retake"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:shrinkColumns="2">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dimen_8dp"
+                                    android:paddingTop="@dimen/dimen_8dp"
+                                    android:paddingRight="@dimen/dimen_8dp">
+
+                                    <TextView android:text="@string/text.keterangan" />
+
+                                    <TextView
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:text=":" />
+
+                                    <TextView
+                                        android:id="@+id/txt_keterangan_retake"
+                                        android:maxLines="2"
+                                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dimen_8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:drawableLeft="@drawable/ic_attachment"
+                            android:drawablePadding="@dimen/drawable_padding_detail"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/padding_detail_header"
+                            android:text="@string/header.image_pengajuan"
+                            android:textColor="@color/blue_dark"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!--IMAGE ATTACHMENT GOES HERE-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tl_data"
+                                android:orientation="vertical"
+                                android:padding="@dimen/dimen_8dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tvExistingPhoto"
+                                    android:padding="@dimen/padding_detail_header"
+                                    android:text="@string/text.existing_photo"
+                                    android:textStyle="bold" />
+                                <HorizontalScrollView
+                                    android:id="@+id/Orihsv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:id="@+id/Oriln_attachment"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical">
+
+                                        <!--ITEM PHOTO 1-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:layout_gravity="center"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_1"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_1"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_1"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="2dp"
+                                                    android:layout_marginRight="2dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_1"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 2-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_gravity="bottom"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border"
+                                                android:gravity="bottom">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_2"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_2"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_2"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_2"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 3-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera3"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_3"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_3"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_3"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_3"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 4-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera4"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_4"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_4"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_4"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_4"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_4"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 5-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera5"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_5"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_5"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_5"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_5"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_5"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 6-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_6"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera6"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_6"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_6"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_6"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_6"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_6"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+
+                                        <!--ITEM PHOTO 7-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_7"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera7"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_7"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_7"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_7"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_7"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_7"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+
+                                        <!--ITEM PHOTO 8-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_8"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera8"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_8"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_8"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_8"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_8"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_8"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 9-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_9"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera9"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_9"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_9"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_9"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_9"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_9"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 10-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_10"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera10"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_10"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_10"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_10"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_10"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_10"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 11-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_11"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera11"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_11"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_11"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_11"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_11"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_11"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/llContainerPhotoNonElcOriImg"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <!--ITEM PHOTO 12-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_12"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera12"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_12"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_12"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_12"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_12"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_12"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 13-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_13"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera13"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_13"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_13"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_13"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_13"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_13"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 14-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_14"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera14"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_14"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_14"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_14"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_14"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_14"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 15-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_15"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera15"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_15"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_15"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_15"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_15"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_15"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="STNK"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 16-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_16"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera16"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_16"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_16"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_16"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_16"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_16"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 17-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_17"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera17"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_17"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_17"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_17"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_17"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_17"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 18-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_18"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera18"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_18"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_18"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_18"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_18"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_18"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 19-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_19"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera19"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_19"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_19"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_19"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_19"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_19"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 20-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_20"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera20"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_20"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_20"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_20"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_20"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_20"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 21-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_21"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera21"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_21"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_21"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_21"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_21"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_21"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 22-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_22"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera22"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_22"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_22"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_22"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_22"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_22"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 23-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_23"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera23"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_23"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_23"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_23"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_23"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_23"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 24-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_24"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera24"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_24"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_24"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_24"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_24"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_24"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+
+                                        <!--ITEM PHOTO 25-->
+                                        <LinearLayout
+                                            android:id="@+id/Oriln_take_foto_25"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_4dp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/OritvCamera25"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen_48dp"
+                                                android:gravity="center" />
+
+                                            <RelativeLayout
+                                                android:layout_width="128dp"
+                                                android:layout_height="96dp"
+                                                android:layout_margin="@dimen/dimen_4dp"
+                                                android:background="@drawable/bg_border">
+
+                                                <ProgressBar
+                                                    android:id="@+id/Oripb_image_25"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:visibility="gone" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_camera_25"
+                                                    android:layout_width="32dp"
+                                                    android:layout_height="32dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/ic_take_camera" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_take_picture_25"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:scaleType="centerCrop" />
+
+                                                <ImageView
+                                                    android:id="@+id/Oriimg_delete_picture_25"
+                                                    android:layout_width="26dp"
+                                                    android:layout_height="26dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginTop="6dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:background="?android:selectableItemBackground"
+                                                    android:clickable="true"
+                                                    android:padding="2dp"
+                                                    android:scaleType="fitXY"
+                                                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                                                    android:visibility="gone" />
+
+                                                <Button
+                                                    android:id="@+id/Oribtn_muat_ulang_25"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="@string/btn.muat_ulang"
+                                                    android:visibility="gone" />
+                                            </RelativeLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    </LinearLayout>
+                                </HorizontalScrollView>
+
+                                <!--RETAKE PHOTO ITEMS-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen_8dp"
+                                    android:padding="@dimen/padding_detail_header"
+                                    android:text="@string/text.add_new_photo"
+                                    android:textStyle="bold" />
+
+                                <include layout="@layout/view_content_image_retake_photo" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/yellowButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/button.submit" />
+    </RelativeLayout>
+</LinearLayout>

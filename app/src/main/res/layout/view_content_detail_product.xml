@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_8dp">
+
+        <LinearLayout
+            android:id="@+id/ln_pengajuan_edit_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_4dp"
+                android:text="Asset yang diajukan: "
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_product_offering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_8dp"
+                android:text="-"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+                android:id="@+id/act_supplier_asset"
+                style="@style/AutoCompleteTextViewForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.supplier"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <ProgressBar
+                android:id="@+id/pb_supplier"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_supplier_asset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Supplier"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+
+            <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+                android:id="@+id/act_marketing_supplier_asset"
+                style="@style/AutoCompleteTextViewForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.marketing_supplier"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <ProgressBar
+                android:id="@+id/pb_marketing"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_marketing_supplier_asset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Marketing Supplier"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+                android:id="@+id/act_product_offering_product"
+                style="@style/AutoCompleteTextViewForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="@string/hint.product_offering"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_product_offering_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8dp"
+            android:text="Please Show Field Product Offering"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+                android:id="@+id/act_pos_product"
+                style="@style/AutoCompleteTextViewForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.pos"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_jumlah_asset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Asset"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_jumlah_asset_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/jumlah_asset"
+                android:hint="@string/hint.jumlah_asset" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

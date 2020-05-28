@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_4dp">
+
+            <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+                android:id="@+id/act_kreditmu_profesi"
+                style="@style/AutoCompleteTextViewForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint.kreditmu_profesi"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+
+                android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_kreditmu_profesi"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

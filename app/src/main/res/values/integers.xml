@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_length_of_npwp">15</integer>
+    <integer name="max_length_of_percent">5</integer>
+    <integer name="max_length_of_hundreds">9</integer>
+    <integer name="max_length_for_rupiah">11</integer>
+    <integer name="max_length_for_rupiah_long">25</integer>
+    <integer name="max_length_alamat">100</integer>
+    <integer name="max_length_50">50</integer>
+    <integer name="max_length_100">100</integer>
+    <integer name="max_length_20">20</integer>
+</resources>

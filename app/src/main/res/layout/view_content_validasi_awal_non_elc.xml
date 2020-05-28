@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_8dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edtValidasiNoKtp"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_no_ktp"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="16"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/til_nama_legal"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edtValidasiNamaLegal"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nama_legal"
+                android:imeOptions="actionNext"
+                android:maxLength="16"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/til_nama_ibu"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edtValidasiNamaIbuKandung"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nama_ibu_kandung"
+                android:imeOptions="actionNext"
+                android:maxLength="16"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edtValidasiTanggalLahir"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint_tanggal_lahir"
+                android:longClickable="false" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edtValidasiNoHp"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.no_hp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="15" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_pilihan_cabang"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spnValidasiCabang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/pilihan_cabang_non_elc" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

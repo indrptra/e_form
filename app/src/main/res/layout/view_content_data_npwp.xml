@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_no_npwp_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_4dp">
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/edt_no_npwp_detail"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.npwp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="15"
+            android:maxLines="1"
+            app:mask="##.###.###.#-###.###" />
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>

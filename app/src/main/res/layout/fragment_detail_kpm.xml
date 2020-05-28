@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/va"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/text.expired_kpm"
+        android:textColor="@color/colorSecondaryText"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_error_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ERROR"
+            android:textColor="@color/colorSecondaryText"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="retry" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_content_form_detail_data_pribadi" />
+
+                <include layout="@layout/view_content_form_detail_data_pasangan" />
+
+                <include layout="@layout/view_content_form_detail_alamat_pemohon" />
+
+                <include layout="@layout/view_content_form_detail_informasi_kerabat" />
+
+                <include layout="@layout/view_content_form_detail_data_pekerjaan" />
+
+                <include layout="@layout/view_content_form_detail_data_kartu_kredit" />
+
+                <include layout="@layout/view_content_form_detail_data_kartu_membership" />
+
+                <include layout="@layout/view_content_form_detail_detail_product" />
+
+                <include layout="@layout/view_content_form_detail_detail_asset" />
+
+                <include layout="@layout/view_content_form_detail_agunan" />
+
+                <include layout="@layout/view_content_form_detail_data_asuransi" />
+
+                <include
+                    android:id="@+id/view_perhitungan_elektronik"
+                    layout="@layout/view_content_form_detail_data_perhitungan_elektronik" />
+
+                <include
+                    android:id="@+id/view_perhitungan_kendaraan"
+                    layout="@layout/view_content_form_detail_data_perhitungan_kendaraan" />
+
+                <include layout="@layout/view_content_form_data_janji_bertemu" />
+
+                <include layout="@layout/view_content_form_detail_attachment" />
+
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout
+            android:id="@+id/frm_button_kpm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_process_kpm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_4dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:minHeight="56dp"
+                    android:text="@string/text.process"
+                    android:textColor="@color/blue_dark" />
+
+                <Button
+                    android:id="@+id/btn_ignore_kpm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:minHeight="56dp"
+                    android:text="@string/text.ignore"
+                    android:textColor="@color/blue_dark" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</ViewAnimator>

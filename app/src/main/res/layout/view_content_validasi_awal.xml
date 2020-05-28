@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_8dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_take_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_gray"
+                android:padding="@dimen/dimen_14dp"
+                android:text="@string/text.take_foto_ktp"
+                android:textSize="@dimen/text_small_body"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/ln_take_ktp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_4dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_camera_1"
+                android:layout_width="128dp"
+                android:layout_height="96dp"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:background="@drawable/bg_border">
+
+                <ImageView
+                    android:id="@+id/img_camera_1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_take_camera" />
+
+                <ImageView
+                    android:id="@+id/btn_camera_ktp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_no_ktp_pribadi_validasi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_no_ktp"
+                android:inputType="number"
+                android:maxLength="16"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/til_nama_legal"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_nama_legal_validasi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nama_legal"
+                />
+        </android.support.design.widget.TextInputLayout>
+<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    android:id="@+id/til_nama_ibu"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_nama_ibu_validasi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nama_ibu_kandung"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_warning_no_ktp_pribadi_validasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:text="Please Show Field KTP"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_tanggal_lahir_pribadi_validasi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint_tanggal_lahir"
+                android:longClickable="false" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_warning_tanggal_lahir_pribadi_validasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:text="Please Show Field Date of Birth"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_4dp"
+                android:layout_weight="3"
+                android:visibility="gone">
+
+                <EditText
+                    style="@style/EditTextForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="62+" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_4dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edt_handphone_pribadi_validasi"
+                    style="@style/EditTextForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint.no_hp"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="20" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_warning_handphone_pribadi_validasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:text="Please Show Field Phone Number"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ln_cabang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_pilihan_cabang"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_pilihan_cabang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/pilihan_cabang" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_warning_pilihan_cabang_validasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:text="Please Show Field Branch"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

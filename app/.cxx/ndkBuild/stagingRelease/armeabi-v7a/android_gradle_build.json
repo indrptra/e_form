@@ -1,0 +1,34 @@
+{
+  "buildFiles": [
+    "/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Android.mk",
+    "/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/home/apc-lap008/Android/Sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/obj NDK_LIBS_OUT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/lib clean"
+  ],
+  "buildTargetsCommand": "/home/apc-lap008/Android/Sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/obj NDK_LIBS_OUT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "Constant-stagingRelease-armeabi-v7a": {
+      "buildCommand": "/home/apc-lap008/Android/Sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/obj NDK_LIBS_OUT\u003d/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/lib /home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/obj/local/armeabi-v7a/libConstant.so",
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "Constant",
+      "files": [
+        {
+          "src": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Constant.c",
+          "flags": "-target armv7-none-linux-androideabi21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/apc-lap008/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fpic -march\u003darmv7-a -mthumb -Oz -DNDEBUG -I/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni -DANDROID -Wformat -Werror\u003dformat-security"
+        }
+      ],
+      "output": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/obj/local/armeabi-v7a/libConstant.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi-v7a": {
+      "cCompilerExecutable": "/home/apc-lap008/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 14
+        versionName "2.2.3.2"
+
+//        project.version = android.defaultConfig.versionName
+    }
+
+//    libraryVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            output.outputFile = new File(
+//                    output.outputFile.parent,
+//                    output.outputFile.name.replace((".aar"), "-${version}.aar"))
+//        }
+//    }
+}

@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ln_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <!--ITEM PHOTO 1-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_1"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_4dp" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_2"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--ITEM PHOTO 3-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_detail_header"                    android:layout_marginBottom="@dimen/dimen_4dp"
+                     />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_3"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 4-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                     />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_4"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 5-->
+            <LinearLayout
+                android:id="@+id/llContainerCamera5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_4dp" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_5"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 6-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_4dp" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_6"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 7-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_7"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 8-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_4dp" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_8"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 9-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera9"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_9"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 10-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_4dp" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_10"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 11-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera11"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                     />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_11"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llContainerPhotoNonElc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--ITEM PHOTO 12-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_12"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 13-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="138dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_13"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 14-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_14"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 15-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_15"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 16-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_16"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 17-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_17"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 18-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_18"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_18"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 19-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_19"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_19"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 20-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_20"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 21-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_21"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_21"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 22-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_22"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 23-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_23"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_23"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 24-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_24"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_24"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--ITEM PHOTO 25-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCamera25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_4dp"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="96dp"
+                        android:layout_margin="@dimen/dimen_4dp"
+                        android:background="@drawable/bg_border">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_take_camera" />
+
+                        <ImageView
+                            android:id="@+id/img_take_picture_25"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/img_delete_picture_25"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="?android:selectableItemBackground"
+                            android:clickable="true"
+                            android:padding="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txt_attachment_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hsv"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/text.validasi_1_foto"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:visibility="gone" />
+</RelativeLayout>
+
+

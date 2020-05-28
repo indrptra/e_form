@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dimen_8dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_recoment" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/drawable_padding_detail"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_8dp"
+                    android:text="@string/header.rekomendasi"
+                    android:textColor="@color/blue_dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+            <TableLayout
+                android:id="@+id/tl_pengajuan_data_asuransi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:shrinkColumns="2">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingRight="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/header.rekomendasi" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=": " />
+
+                    <TextView
+                        android:id="@+id/txt_is_rekomendasi"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingRight="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/txt_rekomendasi" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=": " />
+
+                    <TextView
+                        android:id="@+id/txt_rekomendasi"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingRight="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/txt_catatan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=": " />
+
+                    <TextView
+                        android:id="@+id/txt_keterangan_rekomendasi"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

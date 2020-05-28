@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_flip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_switch_camera_white_36dp"
+        android:paddingTop="@dimen/dimen_8dp"
+        android:visibility="visible" />
+
+    <itsmagic.present.simplecamera.SimpleCameraPreview
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/camera"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_photo_camera_white_36dp" />
+
+</RelativeLayout>

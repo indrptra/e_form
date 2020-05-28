@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_data_pribadi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_data_pribadi"
+                android:drawablePadding="@dimen/drawable_padding_detail"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_detail_header"
+                android:text="@string/header.data_pribadi"
+                android:textColor="@color/blue_dark"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/tl_pengajuan_data_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:shrinkColumns="2">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_8dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.nama_lengkap" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_nama_lengkap"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.nama_pada_identitas" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_nama_pada_identitas"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.no_ktp" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_no_ktp"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.no_kk" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_no_kk"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.no_npwp" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_no_npwp"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.tanggal_terbit_ktp" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_tanggal_terbit_ktp"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.gender" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_gender"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.tempat_lahir" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_tempat_lahir"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.tanggal_lahir" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_tanggal_lahir"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/trPerjanjianPisahHarta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint_perjanjian_pisah_harta" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tvPerjanjianPisahHarta"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.nama_gadis_ibu_kandung" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_nama_gadis_ibu_kandung"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.pendidikan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_pendidikan"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text_warga_negara" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_warga_negara"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.status_rumah" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_status_rumah"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.tinggal_sejak_tahun" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_tinggal_sejak_tahun"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.tinggal_sejak_bulan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_tinggal_sejak_bulan"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.agama" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_agama"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text_status_pernikahan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_status_pernikahan"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.jumlah_tanggungan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_jumlah_tanggungan"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.nomor_handphone" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_no_handphone"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.email" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

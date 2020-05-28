@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dimen_8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_agunan"
+                android:drawablePadding="@dimen/drawable_padding_detail"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/padding_detail_header"
+                android:text="@string/header.agunan"
+                android:textColor="@color/blue_dark"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:shrinkColumns="2">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint_regional" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=": " />
+
+                    <TextView
+                        android:id="@+id/tvWilayahKendaraan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint_cabang" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tvCabangKendaraan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.jenis_kendaraan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvJenisKendaraan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint.merk_kendaraan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvMerkKendaraan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/tct_tipe_kendaraan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvTipeKendaraan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint.tahun" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvTahunKendaraan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint.warna" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvWarnaKendaraan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint.isi_silinder" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvIsiSilinder" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint.no_polisi" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvNoPolisi" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint.no_rangka" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvNoRangka" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint.no_mesin" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvNoMesin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint.bpkb_nama" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvBpkbAtasNama" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_2dp">
+
+                    <TextView android:text="Nama Bpkb" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvNamaBpkb"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint_masa_berlaku_stnk" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvMasaBerlakuStnk" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/hint_masa_berlaku_pajak_stnk" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/tvMasaBerlakuPajakStnk" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

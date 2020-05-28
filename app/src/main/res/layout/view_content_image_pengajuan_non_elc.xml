@@ -1,0 +1,2096 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_8dp"
+    android:visibility="gone">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ln_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <!--ITEM PHOTO 1-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_1"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_1"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 2-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border"
+                    android:gravity="bottom">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_2"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_2"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--ITEM PHOTO 3-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_3"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_3"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 4-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_4"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_4"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 5-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_5"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_5"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 6-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_6"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_6"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 7-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_7"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_7"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_7"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!--ITEM PHOTO 8-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_8"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_8"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_8"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 9-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera9"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_9"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_9"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_9"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 10-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_10"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_10"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_10"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 11-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera11"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_11"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_11"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_11"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 12-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera12"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_12"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_12"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_12"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!--ITEM PHOTO 13-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_13"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_13"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_13"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 14-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera14"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_14"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_14"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_14"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 15 slip gaji-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera15"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_15"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_15"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_15"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="STNK"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 16 asset tampak samping kanan-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera16"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_16"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_16"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_16"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 17 asset tampak samping kiri-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_17"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera17"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_17"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_17"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_17"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 18-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_18"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera18"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_18"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_18"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_18"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!--ITEM PHOTO 19-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_19"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera19"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_19"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_19"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_19"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 20-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_20"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera20"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_20"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_20"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_20"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 21-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_21"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera21"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_21"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_21"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_21"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 22-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_22"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera22"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_22"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_22"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_22"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 23-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_23"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera23"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_23"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_23"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_23"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_23"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 24-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_24"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera24"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_24"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_24"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_24"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--ITEM PHOTO 25-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_25"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera25"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_25"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_25"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_25"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_25"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--ITEM PHOTO 26-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_26"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera26"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_26"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_26"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_26"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_26"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--ITEM PHOTO 27-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_27"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera27"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_27"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_27"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_27"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_27"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--ITEM PHOTO 28-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_28"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera28"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_28"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_28"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_28"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_28"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--ITEM PHOTO 29-->
+            <LinearLayout
+                android:id="@+id/ln_take_foto_29"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCamera29"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_border">
+
+                    <ProgressBar
+                        android:id="@+id/pb_image_29"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_camera_29"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_take_camera" />
+
+                    <ImageView
+                        android:id="@+id/img_take_picture_29"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/img_delete_picture_29"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_muat_ulang_29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/btn.muat_ulang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txt_attachment_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hsv"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/text.error_attachment"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</RelativeLayout>

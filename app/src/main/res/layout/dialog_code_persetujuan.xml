@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/dimen_12dp"-->
+            <!--android:layout_marginTop="@dimen/dimen_12dp"-->
+            <!--android:src="@drawable/ic_lock" />-->
+            <TextView
+                android:id="@+id/tv_resend_token"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:gravity="center"
+                android:text="@string/tv_title_token"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_isi_resend_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center"
+                android:text="@string/tv_token_isi"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="00 : 0"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_send_to"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Send To"-->
+            <!--android:textSize="10sp"/>-->
+
+            <TextView
+                android:id="@+id/tv_handphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="088888888888"
+                android:textSize="@dimen/text_small_body" />
+            <!--</LinearLayout>-->
+
+            <EditText
+                android:id="@+id/edt_code_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:gravity="center"
+                android:hint="CODE"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="@dimen/dimen_8dp"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/tv_error_send_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text.error_send_code"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_error_send_code_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text.error_send_code_length"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textStyle="italic"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="OK"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bg_gray"
+            android:enabled="false"
+            android:text="Resend"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+

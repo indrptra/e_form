@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/dimen_8dp">
+
+    <FrameLayout
+        android:id="@+id/frm_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/ll_date"
+        android:background="@android:drawable/editbox_background">
+
+        <Spinner
+            android:id="@+id/spn_pengajuan"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:drawable/editbox_background">
+
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_date"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/ic_date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frm_wrap"
+        android:background="@android:drawable/editbox_background">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_search"
+            android:imeOptions="actionDone"
+            android:maxLines="1" />
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/ic_search" />
+    </LinearLayout>
+
+    <ViewAnimator
+        android:id="@+id/va_pengajuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_search">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tidak ada list pengajuan"
+            android:textColor="@color/colorSecondaryText"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_error_api"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="ERROR"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="retry" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pengajuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewAnimator>
+</RelativeLayout>

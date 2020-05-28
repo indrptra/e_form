@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_8dp"
+    android:visibility="gone">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp">
+
+        <EditText
+            android:id="@+id/edt_nama_perusahaan"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.nama_perusahaan"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textAllCaps="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp">
+
+        <EditText
+            android:textAllCaps="true"
+            android:id="@+id/edt_alamat_perusahaan"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.alamat"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="@integer/max_length_alamat" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp">
+
+        <EditText
+            android:id="@+id/edt_rt_perusahaan"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.rt"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp">
+
+        <EditText
+            android:id="@+id/edt_rw_perusahaan"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.rw"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_2dp">
+
+            <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+                android:id="@+id/act_auto_alamat_pekerjaan"
+                style="@style/AutoCompleteTextViewForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:hint="@string/hint.autoAlamat"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_kelurahan_perusahaan"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_data_pekerjaan_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_2dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edt_area_phone_perusahaan"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.area_phone"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="4"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_2dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/edt_phone_perusahaan"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.phone"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp">
+
+        <EditText
+            android:id="@+id/edt_bekerja_sejak_perusahaan"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/hint.bekerja_sejak"
+            android:imeOptions="actionNext"
+            android:inputType="datetime"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp">
+
+        <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+            android:id="@+id/act_profesi_perusahaan"
+            style="@style/AutoCompleteTextViewForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.profesi"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp">
+
+        <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+            android:id="@+id/act_job_type_perusahaan"
+            style="@style/AutoCompleteTextViewForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.job_type"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp">
+
+        <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+            android:id="@+id/act_job_position_perusahaan"
+            style="@style/AutoCompleteTextViewForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.job_position"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp">
+
+        <com.kreditplus.eform.helper.NiceAutoCompleteTextView
+            android:id="@+id/act_industri_perusahaan"
+            style="@style/AutoCompleteTextViewForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.job_industri"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp"
+        android:hint="@string/hint.penghasilan_tetap">
+
+        <com.kreditplus.eform.view.IndonesianCurrencyEditText
+            android:id="@+id/edt_penghasilan_tetap_perusahaan"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="@integer/max_length_for_rupiah" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp"
+        android:hint="@string/hint.penghasilan_lain">
+
+        <com.kreditplus.eform.view.IndonesianCurrencyEditText
+            android:id="@+id/edt_penghasilan_lain_perusahaan"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="@integer/max_length_for_rupiah" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp"
+        android:hint="@string/hint.penghasilan_pasangan">
+
+        <com.kreditplus.eform.view.IndonesianCurrencyEditText
+            android:id="@+id/edt_penghasilan_pasangan_perusahaan"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="@integer/max_length_for_rupiah" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_2dp"
+        android:hint="@string/hint.biaya_hidup">
+
+        <com.kreditplus.eform.view.IndonesianCurrencyEditText
+            android:id="@+id/edt_biaya_hidup_perusahaan"
+            style="@style/EditTextForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="@integer/max_length_for_rupiah" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_nama_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_name_of_company"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_alamat_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_company_address"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_rt_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_rt_of_company"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_rw_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_rw_of_company"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_auto_alamat_pekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_city_of_company"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_area_phone_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_phone_area_of_company"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_phone_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_company_phone_number"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_bekerja_sejak_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_work_since_on_company"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_profesi_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_profession_of_company"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_industri_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_industry_of_company"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_penghasilan_tetap_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/hide_msg_fixed_income_of_the_company"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_biaya_hidup_perusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="Please Show Field Cost of Living"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+
+</LinearLayout>

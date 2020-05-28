@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_detail_product"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_product"
+                android:drawablePadding="@dimen/drawable_padding_detail"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_detail_header"
+                android:text="@string/header.detail_product"
+                android:textColor="@color/blue_dark"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/tl_pengajuan_detail_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:shrinkColumns="2">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_8dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.product_offering" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=": " />
+
+                    <TextView
+                        android:id="@+id/txt_product_offering"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.jumlah_asset" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/txt_jumlah_asset" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/trTenorElc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.tenor" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/txt_tenor" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:paddingTop="@dimen/dimen_4dp"
+                    android:paddingRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.pos" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_pos"
+                        android:paddingRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

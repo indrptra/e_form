@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <itsmagic.present.simplecamera.SimpleCameraPreview
+        android:id="@+id/camera_preview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_action"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_frame_ktp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_12dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="1. Posisikan KTP anda sesuai dengan bingkai pada layar kamera"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="2. Pastikan pencahayaan yang baik untuk mendapatkan hasil yang lebih akurat"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="3. Kualitas KTP akan berpengaruh terhadap tingkat akurasi data."
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_12sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_frame_ktp_face"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/layout_action"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_14dp"
+        android:src="@drawable/btn_take_photo"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_action"
+        app:layout_constraintLeft_toLeftOf="@+id/layout_action"
+        app:layout_constraintRight_toRightOf="@+id/layout_action"
+        app:layout_constraintTop_toTopOf="@+id/layout_action" />
+
+    <ImageView
+        android:id="@+id/iv_switch"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_64dp"
+        android:layout_height="@dimen/dimen_64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="@dimen/dimen_12dp"
+        android:src="@drawable/btn_switch_camera"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/layout_action"
+        app:layout_constraintRight_toRightOf="@+id/layout_action"
+        app:layout_constraintStart_toStartOf="@+id/layout_action"
+        app:layout_constraintTop_toTopOf="@+id/layout_action" />
+
+</android.support.constraint.ConstraintLayout>

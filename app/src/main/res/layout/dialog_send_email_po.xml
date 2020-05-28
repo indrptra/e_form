@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_send_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:gravity="center"
+                android:text="@string/tv_send_email_po"
+                android:textStyle="bold"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/tv_isi_resend_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center"
+                android:text="@string/tv_token_isi"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+            <EditText
+                android:id="@+id/edt_send_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@string/text.email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dimen_8dp"
+                 />
+            <TextView
+                android:id="@+id/tv_error_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text.error_email"
+                android:textStyle="italic"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <Button
+            android:id="@+id/btn_send_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/btn.send"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

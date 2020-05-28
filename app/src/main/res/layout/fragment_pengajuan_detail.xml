@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tidak ada pengajuan"
+        android:id="@+id/tv_empty"
+        android:visibility="invisible"
+        android:textColor="@color/colorSecondaryText"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_content_form_data_status_customer" />
+
+                <include layout="@layout/view_content_form_data_ovd" />
+
+                <include layout="@layout/view_content_form_detail_data_pribadi" />
+
+                <include
+                    android:id="@+id/includeDataPasangan"
+                    layout="@layout/view_content_form_detail_data_pasangan" />
+
+                <include layout="@layout/view_content_form_detail_alamat_pemohon" />
+
+                <include layout="@layout/view_content_form_detail_informasi_kerabat" />
+
+                <include layout="@layout/view_content_form_detail_data_pekerjaan" />
+
+                <include
+                    android:id="@+id/includeDataKartuKredit"
+                    layout="@layout/view_content_form_detail_data_kartu_kredit" />
+
+                <include
+                    android:id="@+id/includeDataKartuMembership"
+                    layout="@layout/view_content_form_detail_data_kartu_membership" />
+
+                <include layout="@layout/view_content_form_detail_detail_product" />
+
+                <include
+                    android:id="@+id/includeDataAsset"
+                    layout="@layout/view_content_form_detail_detail_asset" />
+
+                <include
+                    android:id="@+id/includeDataAgunan"
+                    layout="@layout/view_content_form_detail_agunan" />
+
+                <include layout="@layout/view_content_form_detail_data_asuransi" />
+
+                <include
+                    android:id="@+id/view_perhitungan_elektronik"
+                    layout="@layout/view_content_form_detail_data_perhitungan_elektronik" />
+
+                <include
+                    android:id="@+id/view_perhitungan_kendaraan"
+                    layout="@layout/view_content_form_detail_data_perhitungan_kendaraan" />
+
+                <include layout="@layout/view_content_form_data_keterangan" />
+
+                <include layout="@layout/view_content_form_detail_attachment" />
+
+                <include layout="@layout/view_content_form_data_keterangan_po" />
+
+                <include
+                    android:id="@+id/view_recomendations"
+                    layout="@layout/view_content_form_detail_rekomendasi" />
+
+                <include layout="@layout/view_content_form_detail_attachment_po" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/llBtnRetry"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_error_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ERROR"
+            android:textColor="@color/colorSecondaryText"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="retry" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_4dp"
+    android:paddingRight="@dimen/dimen_4dp">
+
+    <TextView
+        android:id="@+id/txt_asset_item_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_detail_header"
+        android:text="@string/text.assetElektronik"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:shrinkColumns="2">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp">
+
+            <TextView android:text="@string/text.merk_kendaraan" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=": " />
+
+            <TextView
+                android:id="@+id/txt_merk_kendaraan"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="-" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.type_model" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_type_model"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.tahun_kendaraan" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_tahun_kendaraan"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.warna_kendaraan" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_warna_kendaraan"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.isi_silinder" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_isi_silinder"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.no_polisi" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_no_polisi"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.no_rangka" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_no_rangka"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp">
+
+            <TextView android:text="@string/text.no_mesin" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/txt_no_mesin"
+                android:paddingRight="@dimen/drawable_padding_right_table_row"
+                android:text="-" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

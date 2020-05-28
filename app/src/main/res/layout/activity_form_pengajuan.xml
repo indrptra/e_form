@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frm_button_bottom"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_master_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_master_header"
+                    layout="@layout/view_header_kop"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_master_header"
+                    layout="@layout/view_content_form_kop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_data_nama_pemohon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_data_nama_pemohon"
+                    layout="@layout/view_header_nama_pemohon"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_data_nama_pemohon"
+                    layout="@layout/view_content_nama_pemohon"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_data_validasi_awal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_data_validasi_awal"
+                    layout="@layout/view_header_validasi_awal" />
+
+                <include
+                    android:id="@+id/content_data_validasi_awal"
+                    layout="@layout/view_content_validasi_awal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_data_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_data_pribadi"
+                    layout="@layout/view_header_data_pribadi"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_data_pribadi"
+                    layout="@layout/view_content_data_pribadi" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_data_pasangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_data_pasangan"
+                    layout="@layout/view_header_data_pasangan"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_data_pasangan"
+                    layout="@layout/view_content_data_pasangan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_data_alamat_pemohon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_alamat_pemohon"
+                    layout="@layout/view_header_alamat_pemohon"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_alamat_pemohon"
+                    layout="@layout/view_content_alamat_pemohon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_informasi_kerabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_informasi_kerabat"
+                    layout="@layout/view_header_informasi_kerabat"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_informasi_kerabat"
+                    layout="@layout/view_content_informasi_kerabat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_data_pekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_data_pekerjaan"
+                    layout="@layout/view_header_data_pekerjaan"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_data_pekerjaan"
+                    layout="@layout/view_content_data_pekerjaan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_data_kartu_kredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_data_kartu_kredit"
+                    layout="@layout/view_header_data_kartu_kredit"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_data_kartu_kredit"
+                    layout="@layout/view_content_data_kartu_kredit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_data_kartu_membership"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_data_kartu_membership"
+                    layout="@layout/view_header_data_kartu_membership"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_data_kartu_membership"
+                    layout="@layout/view_content_data_kartu_membership" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_detail_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_detail_product"
+                    layout="@layout/view_header_detail_product"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_detail_product"
+                    layout="@layout/view_content_data_detail_product_new" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_detail_asset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_detail_asset"
+                    layout="@layout/view_header_detail_asset"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_detail_asset"
+                    layout="@layout/view_content_detail_asset" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_data_asuransi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_data_asuransi"
+                    layout="@layout/view_header_data_asuransi"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_data_asuransi"
+                    layout="@layout/view_content_data_asuransi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_data_perhitungan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_data_perhitungan"
+                    layout="@layout/view_header_data_perhitungan"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_data_perhitungan"
+                    layout="@layout/view_content_data_perhitungan_elektronik"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/container_content_data_perhitungan"
+                    layout="@layout/view_container_content_data_perhitungan_elektronik"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_detail_npwp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_detail_npwp"
+                    layout="@layout/view_header_detail_npwp"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_detail_npwp"
+                    layout="@layout/view_content_data_npwp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_keterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_data_keterangan"
+                    layout="@layout/view_header_keterangan"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_data_keterangan"
+                    layout="@layout/view_content_data_keterangan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_persetujuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_persetujuan"
+                    layout="@layout/view_header_persetujuan"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_persetujuan"
+                    layout="@layout/view_content_persetujuan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_image_pengajuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_image_pengajuan"
+                    layout="@layout/view_header_image_pengajuan"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_image_pengajuan"
+                    layout="@layout/view_content_image_pengajuan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_recomendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <include
+                    android:id="@+id/header_recomendation"
+                    layout="@layout/view_header_rekomendasi"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_recomendation"
+                    layout="@layout/view_content_rekomendasi" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_wrapper_informasi_penawaran"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_informasi_penawaran"
+                    layout="@layout/view_header_informasi_penawaran_product"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_informasi_penawaran"
+                    layout="@layout/view_content_form_informasi_penawaran_product" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_wrapper_persetujuan_tambahan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/header_persetujuan_tambahan"
+                    layout="@layout/view_header_persetujuan_tambahan"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/content_persetujuan_tambahan"
+                    layout="@layout/view_content_form_persetujuan_tambahan" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/frm_button_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="56dp"
+            android:text="next"
+            android:textColor="@color/blue_dark" />
+
+        <LinearLayout
+            android:id="@+id/ln_button_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_8dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_save_draft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:minHeight="56dp"
+                android:text="save as draft"
+                android:textColor="@color/blue_dark" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:minHeight="56dp"
+                android:text="submit"
+                android:textColor="@color/blue_dark" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dimen_48dp"
+        android:layout_marginRight="@dimen/dimen_48dp"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_pbh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pb_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="1 / 15"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_horizontal"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dimen_32dp"
+            android:layout_marginRight="@dimen/dimen_32dp"
+            android:indeterminate="false"
+            android:max="25"
+            android:minWidth="200dp"
+            android:minHeight="16dp"
+            android:progress="1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_retry"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="RETRY"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>
+
+

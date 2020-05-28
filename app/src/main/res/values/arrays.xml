@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item>PILIH</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+    <string-array name="gender_value">
+        <item>E</item>
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="pendidikan">
+        <item>PILIH</item>
+        <item>D1</item>
+        <item>D2</item>
+        <item>D3</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+        <item>SLTA</item>
+        <item>SLTP</item>
+        <item>SD</item>
+        <item>Tidak Sekolah</item>
+    </string-array>
+    <string-array name="pendidikan_value">
+        <item>E</item>
+        <item>D1</item>
+        <item>D2</item>
+        <item>D3</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+        <item>SLTA</item>
+        <item>SLTP</item>
+        <item>SD</item>
+        <item>TS</item>
+    </string-array>
+    <string-array name="warga_negara">
+        <item>WNI</item>
+        <item>WNA</item>
+    </string-array>
+    <string-array name="warga_negara_value">
+        <item>WNI</item>
+        <item>WNA</item>
+    </string-array>
+    <string-array name="status_rumah">
+        <item>PILIH</item>
+        <item>Keluarga</item>
+        <item>KPR</item>
+        <item>Kontrak</item>
+        <item>Kost</item>
+        <item>Perusahaan</item>
+        <item>Sendiri</item>
+    </string-array>
+    <string-array name="status_rumah_value">
+        <item>E</item>
+        <item>KL</item>
+        <item>KP</item>
+        <item>KR</item>
+        <item>KS</item>
+        <item>PE</item>
+        <item>SD</item>
+    </string-array>
+    <string-array name="agama">
+        <item>PILIH</item>
+        <item>Islam</item>
+        <item>Katholik</item>
+        <item>Kristen</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="agama_value">
+        <item>E</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="status_pernikahan_non_elc">
+        <item>PILIH</item>
+        <item>Menikah</item>
+        <item>Lajang</item>
+        <item>Cerai</item>
+        <item>Janda / Duda</item>
+    </string-array>
+    <string-array name="status_pernikahan">
+        <item>PILIH</item>
+        <item>Menikah</item>
+        <item>Lajang</item>
+        <item>Cerai</item>
+        <item>Janda / Duda</item>
+    </string-array>
+    <string-array name="status_pernikahan_value">
+        <item>E</item>
+        <item>M</item>
+        <item>S</item>
+        <item>D</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="jenis_pekerjaan">
+        <item>PILIH</item>
+        <item>Karyawan</item>
+        <item>Profesional</item>
+        <item>Wiraswasta</item>
+    </string-array>
+    <string-array name="jenis_pekerjaan_value">
+        <item>E</item>
+        <item>M</item>
+        <item>P</item>
+        <item>N</item>
+    </string-array>
+    <string-array name="asuransi_agunan">
+        <item>PILIH</item>
+        <item>AGUNAN &amp; JIWA</item>
+    </string-array>
+    <string-array name="asuransi_agunan_value">
+        <item>E</item>
+        <item>TLO &amp; ALL RISK</item>
+    </string-array>
+    <string-array name="angsuran_pertama">
+        <item>PILIH</item>
+        <item>Arrear</item>
+        <item>Advance</item>
+    </string-array>
+    <string-array name="angsuran_pertama_value">
+        <item>E</item>
+        <item>Arrear</item>
+        <item>Advance</item>
+    </string-array>
+    <string-array name="cara_pembayaran">
+        <item>PILIH</item>
+        <item>Tunai</item>
+        <item>Payment Point</item>
+        <item>Check/Bilyet Giro</item>
+    </string-array>
+    <string-array name="cara_pembayaran_value">
+        <item>E</item>
+        <item>CS</item>
+        <item>PP</item>
+        <item>PPDC</item>
+    </string-array>
+    <string-array name="jumlah_asset">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="tenor">
+        <item>PILIH</item>
+        <item>12</item>
+        <item>24</item>
+        <item>36</item>
+    </string-array>
+    <string-array name="fullname">
+        <item>-</item>
+        <item>-</item>
+    </string-array>
+    <string-array name="pengajuan">
+        <item>All</item>
+        <item>New</item>
+        <item>On Process</item>
+        <item>Purchase Order</item>
+        <item>Reject</item>
+        <item>Cancel</item>
+        <item>Delivered</item>
+        <item>Invoice</item>
+        <item>Funding Process</item>
+        <item>Transferred</item>
+        <item>Principal Approval</item>
+        <item>Approved</item>
+    </string-array>
+    <string-array name="jenis_kb">
+        <item>Roda Dua</item>
+        <item>Roda Empat</item>
+    </string-array>
+
+    <string-array name="jenis_kb_value">
+        <item>RD</item>
+        <item>RE</item>
+    </string-array>
+    <string-array name="hubungan_kerabat">
+        <item>PILIH</item>
+        <item>Orang Tua</item>
+        <item>Mertua</item>
+        <item>Anak</item>
+        <item>Adik</item>
+        <item>Kakak</item>
+        <item>Saudara Sepupu</item>
+        <item>Saudara Kandung Ayah/Ibu (Paman/Tante)</item>
+    </string-array>
+
+    <!--form KOP-->
+    <string-array name="tujuan_penggunaan_dana">
+        <item>PILIH</item>
+        <item>Bahan Baku</item>
+        <item>Mesin / Peralatan</item>
+        <item>Jasa Kesehatan</item>
+        <item>Jasa Pendidikan / Kursus</item>
+        <item>Elektronik / Furniture / Sanitasi / Barang Pecah Belah</item>
+        <item>Barang Lifestyle / Kesehatan / Kebugaran</item>
+        <item>Jasa Traveling / Wisata</item>
+        <item>Jasa Renovasi</item>
+        <item>Bahan Bangunan / Konstruksi</item>
+        <item>Jasa Tenaga Kerja</item>
+        <item>Jasa Pesta</item>
+    </string-array>
+    <string-array name="tujuan_penggunaan_dana_value">
+        <item>E</item>
+        <item>RM</item>
+        <item>ME</item>
+        <item>HS</item>
+        <item>ECS</item>
+        <item>EFST</item>
+        <item>LHFitness</item>
+        <item>TTS</item>
+        <item>RS</item>
+        <item>BMC</item>
+        <item>LS</item>
+        <item>PS</item>
+    </string-array>
+    <string-array name="jenis_pembiayaan">
+        <item>PILIH</item>
+        <item>Multiguna - Pembelian Dengan Pembayaran Secara Angsuran</item>
+        <item>Modal Kerja - Fasilitas Modal Usaha</item>
+        <item>Investasi - Pembelian Dengan Pembayaran Secara Angsuran</item>
+    </string-array>
+    <string-array name="only_choice">
+        <item>PILIH</item>
+    </string-array>
+    <string-array name="jenis_pembiayaan_value">
+        <item>E</item>
+        <item>MF</item>
+        <item>WC</item>
+        <item>IN</item>
+    </string-array>
+    <string-array name="metode_penjualan">
+        <item>PILIH</item>
+        <item>Direct Selling</item>
+        <item>Mobile Shop</item>
+        <item>Telemarketing</item>
+        <item>Walk In Customer</item>
+        <item>Exhibition</item>
+        <item>KPM</item>
+    </string-array>
+    <string-array name="metode_penjualan_non_elc">
+        <item>PILIH</item>
+        <item>DIRECT</item>
+        <item>IN HOUSE / RO</item>
+    </string-array>
+    <string-array name="metode_penjualan_non_elc_value">
+        <item>D</item>
+        <item>H</item>
+    </string-array>
+    <string-array name="metode_penjualan_value">
+        <item>E</item>
+        <item>N</item>
+        <item>C</item>
+        <item>D</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="pilihan_cabang">
+        <item>Bogor</item>
+        <item>Depok</item>
+    </string-array>
+    <string-array name="pilihan_cabang_non_elc">
+        <item>PILIH</item>
+    </string-array>
+    <string-array name="tipe_pengajuan_krdit">
+        <item>PILIH</item>
+        <item>PSA</item>
+        <item>NON PSA</item>
+    </string-array>
+    <string-array name="pilihan_cabang_value">
+        <item>BG</item>
+        <item>DP</item>
+    </string-array>
+    <string-array name="type_master_sync">
+        <item>IndustryTypeMaster</item>
+        <item>AssetMaster</item>
+        <item>Kelurahan</item>
+        <item>Profession</item>
+        <item>ProfJobPosition</item>
+        <item>ProfJobType</item>
+        <item>InsCoyBranchMaster</item>
+        <item>LFICoyBranchMaster</item>
+        <item>SupplierEmp</item>
+        <item>ProductOffTenor</item>
+        <item>SupplierMaster</item>
+        <item>ProductOffMaster</item>
+        <item>POSMaster</item>
+    </string-array>
+    <string-array name="master_sync_strings">
+        <item>Industry</item>
+        <item>Asset</item>
+        <item>Kota</item>
+        <item>Profession</item>
+        <item>Job Position</item>
+        <item>Job Type</item>
+        <item>Insurance</item>
+        <item>Life Insurance</item>
+        <item>Marketing Supplier</item>
+        <item>Product Of Tenor</item>
+        <item>Supplier</item>
+        <item>Product Offering</item>
+        <item>Pos</item>
+    </string-array>
+    <string-array name="kreditmu_field_name_personal">
+        <item>Data Pribadi</item>
+        <item>Nama lengkap pemohon</item>
+        <item>Nomor KTP</item>
+        <item>Nomor handphone</item>
+        <item>Tempat lahir</item>
+        <item>Tanggal lahir</item>
+        <item>Alamat email</item>
+        <item>Nama gadis ibu kandung</item>
+        <item>Pendidikan</item>
+        <item>Status pernikahan</item>
+        <item>Jumlah tanggungan</item>
+        <item>Status kepemilikan rumah</item>
+        <item>Mulai tinggal tahun</item>
+        <item>Mulai tinggal bulan</item>
+        <item>Nomer telfon rumah</item>
+        <item>Alamat tinggal domisili</item>
+        <item>Kota domisili</item>
+        <item>Kecamatan domisili</item>
+        <item>Kelurahan domisili</item>
+        <item>Kode pos domisili</item>
+        <item>Cabang terdaftar</item>
+    </string-array>
+    <string-array name="kreditmu_field_type_personal">
+        <item>header</item>
+        <item>editText</item>
+        <item>IntEdtText</item>
+        <item>IntEdtText</item>
+        <item>editText</item>
+        <item>tanggal</item>
+        <item>editText</item>
+        <item>editText</item>
+        <item>spinner</item>
+        <item>spinner</item>
+        <item>IntEdtText</item>
+        <item>spinner</item>
+        <item>tinggalTahun</item>
+        <item>tinggalBulan</item>
+        <item>phone</item>
+        <item>edittext</item>
+        <item>kota</item>
+        <item>kecamatanDomisili</item>
+        <item>kelurahanDomisili</item>
+        <item>zip</item>
+        <item>branch</item>
+    </string-array>
+
+    <string-array name="kreditmu_field_name_alamat">
+        <item>Alamat KTP</item>
+        <item>Sesuai Alamat Domisili</item>
+        <item>Alamat sesuai ktp</item>
+        <item>Kota ktp</item>
+        <item>Kecamatan ktp</item>
+        <item>Kelurahan ktp</item>
+        <item>Kode pos ktp</item>
+    </string-array>
+    <string-array name="kreditmu_field_type_alamat">
+        <item>header</item>
+        <item>checkbox</item>
+        <item>editText</item>
+        <item>kotaKtp</item>
+        <item>kecamatanKtp</item>
+        <item>kelurahanKtp</item>
+        <item>zipKtp</item>
+    </string-array>
+
+    <string-array name="kreditmu_field_name_pekerjaan">
+        <item>Data Pekerjaan</item>
+        <item>Alamat kantor</item>
+        <item>Kota pekerjaan</item>
+        <item>Kecamatan pekerjaan</item>
+        <item>Kelurahan pekerjaan</item>
+        <item>Kode pos pekerjaan</item>
+        <item>Profesi</item>
+        <item>Type pekerjaan</item>
+        <item>Posisi pekerjaan</item>
+        <item>Mulai bekerja tahun</item>
+        <item>Mulai bekerja bulan</item>
+        <item>Penghasilan bersih</item>
+    </string-array>
+    <string-array name="kreditmu_field_type_pekerjaan">
+        <item>header</item>
+        <item>editText</item>
+        <item>kotaPekerjaan</item>
+        <item>kecamatanPekerjaan</item>
+        <item>kelurahanPekerjaan</item>
+        <item>zipPekerjaan</item>
+        <item>profesi</item>
+        <item>jobtype</item>
+        <item>jobposition</item>
+        <item>kerjaTahun</item>
+        <item>kerjaBulan</item>
+        <item>currency</item>
+    </string-array>
+    <string-array name="kreditmu_field_name_button">
+        <item>Submit</item>
+    </string-array>
+    <string-array name="kreditmu_field_type_button">
+        <item>button</item>
+    </string-array>
+    <string-array name="kreditmu_field_name_picture">
+        <item>Attachment</item>
+        <item>Image Attachment</item>
+        <item>Signature</item>
+        <item>Signature</item>
+    </string-array>
+    <string-array name="kreditmu_field_type_picture">
+        <item>header</item>
+        <item>attachment</item>
+        <item>header</item>
+        <item>signature</item>
+    </string-array>
+    <string-array name="kreditmu_first_data">
+        <item>education</item>
+        <item>maritalStatus</item>
+        <item>homeStatus</item>
+        <item>city</item>
+        <item>professionId</item>
+    </string-array>
+    <string-array name="validationKreditmu">
+        <item>Data Pribadi</item>
+        <item>Data Alamat Ktp</item>
+        <item>Data Pekerjaan</item>
+    </string-array>
+
+    <!--Form Data Asuransi-->
+    <string-array name="data_asuransi">
+        <item>ALL RISK</item>
+        <item>No Assurance</item>
+    </string-array>
+    <string-array name="tipe_customer">
+        <item>Reguler</item>
+        <item>Save Draft</item>
+        <item>Autofill Draft</item>
+        <item>Toni Wibawa, S.Kon : RO || S. Kre : Kreditmu</item>
+        <item>Test Kreditplus, S.Kon : RO || S. Kre : Kreditmu</item>
+        <item>MURNIATI, S.Kon : RO || S. Kre : Non Kreditmu</item>
+        <item>TEST JERRY, S.Kon : New || S. Kre : Non Kreditmu (Kreditmu Tidak Aktif)</item>
+        <item>TEST KREDITMU, S.Kon : New || S. Kre : Kreditmu</item>
+        <item>TEST STEVE</item>
+        <item>Data Production Kreditmu</item>
+        <item>RAMDONA, BLACKLIST</item>
+    </string-array>
+
+
+</resources>

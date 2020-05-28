@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.view.SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:id="@+id/ivFrameKTP"
+        android:src="@drawable/frame_ktp"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/ivFrameKTPSelfie"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/dimen_40dp"
+        app:layout_constraintRight_toLeftOf="@id/rlTakePicture"
+        android:src="@drawable/frame_ktp_face"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rlTakePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/dimen_24dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="?android:selectableItemBackground">
+        <LinearLayout
+            android:layout_width="@dimen/dimen_56dp"
+            android:layout_height="@dimen/dimen_56dp"
+            android:background="@drawable/bg_rounded_gray"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:padding="@dimen/dimen_2dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_add_a_photo_black" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

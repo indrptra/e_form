@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <!--validate-->
+        <EditText
+            android:id="@+id/validate_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/validate_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/validate_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+        <!--_ktp-->
+        <EditText
+            android:id="@+id/take_ktp_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/take_ktp_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/take_ktp_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+        <!--_customer-->
+        <EditText
+            android:id="@+id/take_customer_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/take_customer_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/take_customer_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+        <!--_sallary slip-->
+        <EditText
+            android:id="@+id/take_paycheck_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/take_paycheck_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/take_paycheck_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+        <!--_addtional documents-->
+        <EditText
+            android:id="@+id/take_additional_documents_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/take_additional_documents_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/take_additional_documents_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <!--_signature-->
+        <EditText
+            android:id="@+id/take_signature_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/take_signature_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/take_signature_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+        <!--submit-->
+        <EditText
+            android:id="@+id/submit_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/submit_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/submit_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+        <!--sync-->
+        <EditText
+            android:id="@+id/sync_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/sync_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/sync_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTenorELC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tenor_container" />
+
+            <EditText
+                android:id="@+id/et_tenor_product_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/tenor_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flat_rate_container" />
+
+            <EditText
+                android:id="@+id/et_flat_rate_perhitungan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/flat_rate_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dp_container" />
+
+            <EditText
+                android:id="@+id/et_dp_perhitungan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/dp_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/biaya_adm_container" />
+
+            <EditText
+                android:id="@+id/et_biaya_admin_perhitungan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/biaya_adm_container"
+                android:inputType="number"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tipe_pembayaran_container" />
+
+            <EditText
+                android:id="@+id/et_tipe_pembayaran_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/tipe_pembayaran_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/biaya_lainnya_container" />
+
+            <EditText
+                android:id="@+id/et_biaya_lainnya_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/biaya_lainnya_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refund_subsidi_container" />
+
+            <EditText
+                android:id="@+id/et_refund_subsidi_perhitungan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/refund_subsidi_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/purchase_price_container" />
+
+            <EditText
+                android:id="@+id/et_purchase_price_perhitungan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/purchase_price_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discount_container" />
+
+            <EditText
+                android:id="@+id/et_discount_perhitungan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/discount_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ntf_container" />
+
+            <EditText
+                android:id="@+id/et_ntf_perhitungan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/ntf_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/premi_asuransi_container" />
+
+            <EditText
+                android:id="@+id/et_premi_asuransi_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/premi_asuransi_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jumlah_pembiayaan_container" />
+
+            <EditText
+                android:id="@+id/et_jumlah_pembiayaan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/jumlah_pembiayaan_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bunga_pembiayaan_container" />
+
+            <EditText
+                android:id="@+id/et_bunga_pembiayaan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/bunga_pembiayaan_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_pinjaman_container" />
+
+            <EditText
+                android:id="@+id/et_total_pinjaman_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/total_pinjaman_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/angsuran_perbulan_container" />
+
+            <EditText
+                android:id="@+id/et_angsuran_perhitungan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/angsuran_perbulan_container"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pembayaran_pertama_container" />
+
+            <EditText
+                android:id="@+id/et_angsuran_pertama_perhitungan_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:focusable="false"
+
+                android:focusableInTouchMode="false"
+                android:hint="@string/pembayaran_pertama_container"
+                android:longClickable="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

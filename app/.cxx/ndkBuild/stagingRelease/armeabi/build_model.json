@@ -1,0 +1,69 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1",
+      "sdkFolder": "/home/apc-lap008/Android/Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/app",
+      "makeFile": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/src/main/jni/Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/.cxx",
+      "cxxFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx",
+      "ndkFolder": "/home/apc-lap008/Android/Sdk/ndk-bundle",
+      "ndkVersion": "15.2.4203891",
+      "ndkSupportedAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "MIPS",
+        "MIPS64",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "MIPS",
+        "MIPS64",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "stagingRelease",
+    "soFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/lib",
+    "objFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/obj/local",
+    "jsonFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx/ndkBuild/stagingRelease",
+    "gradleBuildOutputFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx/cxx/stagingRelease",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI",
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "MIPS",
+      "MIPS64",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx/ndkBuild/stagingRelease/armeabi",
+  "jsonFile": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx/ndkBuild/stagingRelease/armeabi/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx/cxx/stagingRelease/armeabi",
+  "objFolder": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/build/intermediates/ndkBuild/stagingRelease/obj/local/armeabi",
+  "buildCommandFile": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx/ndkBuild/stagingRelease/armeabi/build_command.txt",
+  "buildOutputFile": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx/ndkBuild/stagingRelease/armeabi/build_output.txt",
+  "modelOutputFile": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx/ndkBuild/stagingRelease/armeabi/build_model.json",
+  "jsonGenerationLoggingRecordFile": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx/ndkBuild/stagingRelease/armeabi/json_generation_record.json",
+  "compileCommandsJsonFile": "/home/apc-lap008/Desktop/Work/Project/eformv1/app/.cxx/ndkBuild/stagingRelease/armeabi/compile_commands.json"
+}

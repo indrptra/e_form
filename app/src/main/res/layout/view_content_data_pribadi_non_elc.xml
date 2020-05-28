@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/lnContainerDataPribadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_8dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edtPribadiNamaPemohon"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint_nama_pemohon_ktp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textAllCaps="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edtPribadiNamaLengkapPemohon"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint_nama_lengkap_pemohon"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textAllCaps="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edtPribadiNoKtp"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint_no_ktp"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="16"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_terbit_ktp_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.tanggal_terbit_ktp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:longClickable="false"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edtPribadiNoKK"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_no_kk"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="16"
+                android:maxLines="1"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edtPribadiTempatLahir"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tempat Lahir"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textAllCaps="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edtPribadiTanggalLahirPribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint_tanggal_lahir"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:longClickable="false"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPribadiJenisKelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_jenis_kelamin"
+                    android:textSize="@dimen/text_12sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgPribadiJenisKelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_8dp">
+
+                    <RadioButton
+                        android:id="@+id/rbPribadiLaki"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/hint_laki_laki" />
+
+                    <RadioButton
+                        android:id="@+id/rbPribadiPerempuan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/hint_perempuan" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPribadiStatusPernikahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Pernikahan"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spnPribadiStatusPernikahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/status_pernikahan_non_elc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPerjanjianPisahHarta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvPerjanjianPisahHarta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_perjanjian_pisah_harta"
+                android:textSize="@dimen/text_12sp" />
+
+            <RadioGroup
+                android:id="@+id/rgPerjanjianPisahHarta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_8dp">
+
+                <RadioButton
+                    android:id="@+id/rbPerjanjianPisahHartaAda"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hint_ada" />
+
+                <RadioButton
+                    android:id="@+id/rbPerjanjianPisahHartaTidakAda"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hint_tidak_ada" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_jml_tanggungan_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.jml_tanggungan"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="2"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_status_rumah_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStatusRumahPribadi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Rumah"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_status_rumah_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/status_rumah" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_tinggal_sejak_tahun_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.tinggal_sejak_tahun"
+                android:imeOptions="actionNext"
+                android:inputType="datetime"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_tinggal_sejak_bulan_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.tinggal_sejak_bulan"
+                android:imeOptions="actionNext"
+                android:inputType="datetime"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_pendidikan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPendidikanPribadi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pendidikan"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_pendidikan_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/pendidikan" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_agama_pribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAgamaPribadi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agama"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spn_agama_pribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/agama" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilNoNpwpPribadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp">
+
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/edt_no_npwp_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.npwp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="15"
+                android:maxLines="1"
+                app:mask="##.###.###.#-###.###" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_email_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_handphone_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hint.no_hp"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:longClickable="false"
+                android:maxLength="20"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <EditText
+                android:id="@+id/edt_nama_ibu_pribadi"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint.nama_ibu"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:textAllCaps="true" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</RelativeLayout>

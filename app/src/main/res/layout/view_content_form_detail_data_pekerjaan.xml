@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_data_pekerjaan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_detail_header"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_pekerjaan"
+                android:drawablePadding="@dimen/drawable_padding_detail"
+                android:gravity="center_vertical"
+                android:text="@string/header.data_pekerjaan"
+                android:textColor="@color/blue_dark"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/tl_pengajuan_data_pekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:shrinkColumns="2">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.nama_perusahaan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_nama_perusahaan_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.alamat" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_alamat_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.rt" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/txt_rt_data_pekerjaan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.rw" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/txt_rw_data_pekerjaan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.kota" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/txt_kota_data_pekerjaan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.kecamatan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_kecamatan_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.kelurahan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_kelurahan_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.kode_pos" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/txt_kode_pos_data_pekerjaan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.area_phone" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/txt_area_phone_data_pekerjaan" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/trPhoneNumberDataPekerjaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text_mobile_phone_number" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txtPhoneNumberDataPekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.phone" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_phone_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.bekerja_sejak" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/txt_bekerja_sejak_data_pekerjaan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.jenis_pekerjaan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_jenis_pekerjaan_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.profesi" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_profesi_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.job_type" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_job_type_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.job_position" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_job_position_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.industri" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/txt_industri_data_pekerjaan" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.penghasilan_tetap" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_penghasilan_tetap_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.penghasilan_lain" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_penghasilan_lain_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.penghasilan_pasangan" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_penghasilan_pasangan_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.biaya_hidup" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/txt_biaya_hidup_data_pekerjaan"
+                        android:layout_marginRight="@dimen/drawable_padding_right_table_row" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/dimen_8dp">
+
+                    <TextView android:text="@string/text.is_affiliate_with_pp" />
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text=":" />
+
+                    <TextView android:id="@+id/txt_is_affiliate_with_pp_data_pekerjaan" />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

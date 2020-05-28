@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "1029763076549",
+    "firebase_url": "https://eformv1-ca5fb.firebaseio.com",
+    "project_id": "eformv1-ca5fb",
+    "storage_bucket": "eformv1-ca5fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029763076549:android:6c0e190311cece5c",
+        "android_client_info": {
+          "package_name": "com.kreditplus.eform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029763076549-dr42v5v7datumd5tjmat0801l7vd0kq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kreditplus.eform",
+            "certificate_hash": "75ff5e3442656b0e7f72e70406f27f8012c2180f"
+          }
+        },
+        {
+          "client_id": "1029763076549-c61mtcnibtutlsn1nps19lov6ss0j0o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdHHXtlCeXpCz899CNLjz1zTBPnJSR8ys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029763076549-c61mtcnibtutlsn1nps19lov6ss0j0o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029763076549:android:b7600ff43689e4e9",
+        "android_client_info": {
+          "package_name": "com.kreditplus.eform.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029763076549-m22nfiviikpint8olqd1gif3l885ejfa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kreditplus.eform.staging",
+            "certificate_hash": "75ff5e3442656b0e7f72e70406f27f8012c2180f"
+          }
+        },
+        {
+          "client_id": "1029763076549-c61mtcnibtutlsn1nps19lov6ss0j0o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdHHXtlCeXpCz899CNLjz1zTBPnJSR8ys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029763076549-c61mtcnibtutlsn1nps19lov6ss0j0o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029763076549:android:f5eb03012bd15c07",
+        "android_client_info": {
+          "package_name": "com.kreditplus.eform.uat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029763076549-r7v511hmujfgfthkus5g0nooqh0a6b66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kreditplus.eform.uat",
+            "certificate_hash": "b89192a3fc71c5c128711a4d5b7819e881f0814e"
+          }
+        },
+        {
+          "client_id": "1029763076549-c61mtcnibtutlsn1nps19lov6ss0j0o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdHHXtlCeXpCz899CNLjz1zTBPnJSR8ys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029763076549-c61mtcnibtutlsn1nps19lov6ss0j0o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

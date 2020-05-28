@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_list_pengajuan"
+        android:title="@string/title_print_pengajuan" />
+    <item
+        android:id="@+id/menu_list_perjanjian"
+        android:title="@string/title_print_perjanjian"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_list_send_email"
+        android:title="@string/title_send_email_po"
+        android:visible="false" />
+</menu>
